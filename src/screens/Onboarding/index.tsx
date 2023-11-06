@@ -5,7 +5,7 @@ import Animated, {
   useAnimatedScrollHandler,
   useSharedValue
 } from 'react-native-reanimated'
-import { Pagination, RenderItem } from '../../components'
+import { CustomButton, Pagination, RenderItem } from '../../components'
 import data from '../../data/data'
 
 interface OnboardingProps { }
@@ -57,7 +57,13 @@ const Onboarding: FC<OnboardingProps> = () => {
       />
 
       <View style={styles.bottomContainer}>
-        <Pagination data={data} scrollX={scrollX} /> 
+        <Pagination data={data} scrollX={scrollX} />
+        <CustomButton
+          dataLength={data?.length}
+          flatListRef={flatListRef}
+          flatListIndex={flatListIndex}
+          scrollX={scrollX}
+        />
       </View>
     </View>
   )
@@ -74,7 +80,9 @@ const styles = StyleSheet.create({
     right: 0,
     marginHorizontal: 30,
     paddingHorizontal: 30,
-
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center'
   }
 })
 
