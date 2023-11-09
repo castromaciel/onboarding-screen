@@ -15,7 +15,7 @@ const Pagination: FC<PaginationProps> = ({
   return (
     <View style={styles.paginationContainer}>
       { 
-        data.map((datum, index) => (
+        data?.map((datum, index) => (
           <Dot key={datum.id} index={index} scrollX={scrollX} />
         ))
       }
