@@ -31,7 +31,6 @@
         <li><a href="#available-scripts">Available Scripts</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#base-dependencies">Base Dependencies</a></li>
     <li><a href="#folder-structure">Folder Structure</a></li>
     <li><a href="#license">License</a></li>
@@ -138,45 +137,6 @@ This project is licensed under the terms of the [MIT license][license-url].
 Based on video [Rakha Wibowo](https://www.youtube.com/watch?v=E-y4lCQF6_I).
 
 Badges used from [Ileriayo • markdown-badges](https://github.com/Ileriayo/markdown-badges).
-
-
-## Run Locally
-
-Clone the project
-
-```bash
-git clone https://github.com/castromaciel/onboarding-screen.git
-```
-
-Install dependencies
-
-```bash
-npm install
-```
-
-For iOS
-
-```bash
-npx pod-install
-```
-
-Start the server
-
-```bash
-npm start -- --reset-cache
-```
-
-Run on IOS
-
-```bash
-npm run ios
-```
-
-Run on ANDROID
-
-```bash
-npx run android
-```
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
